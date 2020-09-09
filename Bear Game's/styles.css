@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*
+Styles for Barrineau_Exam2 HTML pages
+  Author: Leewayne Barrineau
+	Date: 7/27/2019
+   Filename: styles.css
+
+*/
+
+
+header{
+	color:red;
+	
+	font-size:45px;
+	width:100%;
+	max-width:1000px;
+	margin:0% auto 0% auto;
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap; 
+}
+
+
+body{
+
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   -webkit-align-content: flex-start;
+   align-content: flex-start;
+background-color:black;
+color:yellow;
+   max-width: 1024px;
+   min-width: 420px;
+   margin: 0px auto;
+   border: 3px solid rgb(221, 221, 221);
+   box-shadow: 0px 0px 35px rgb(51, 51, 51);
+}
+
+
+
+nav ul li{
+	width:20%;
+	float:left;
+	margin:0% 2% 0% auto;
+	list-style-type: none;
+	font-size:40px;
+}
+#icon img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+#icon h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

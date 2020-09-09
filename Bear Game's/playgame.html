@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+	Page: playgame
+	Author: LeeWayne Barrineau
+	Date: 11/12/2019
+	Filename: playgame.html
+	
+-->
+	<title>Play Game</title>
+	<meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+	<script src="gamescript.js"></script>
+</head>
+
+<body>
+	<header class="Index">
+		<image src="lupin_bear.bmp" />
+		<h1>Bear's Games</h1>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="buyproducts.html">Buy Products</a></li>
+				<li><a href="confirmproducts.html">Confirm Products</a></li>
+				<li><a href="playgame.html">Play Game</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 id="gameTitle">Count Up</h1>
+	<section id="countUpTable">
+		<img src="ag_cardstack.png" alt="" id="cardstack" /></td>
+		<img id="cardOne" class="cardImage" src="ag_trans.gif" />
+		<img id="cardTwo" class="cardImage" src="ag_trans.gif" />      
+		<img id="cardThree" class="cardImage" src="ag_trans.gif" />      
+		<img id="cardFour" class="cardImage" src="ag_trans.gif" />
+		<img id="cardFive" class="cardImage" src="ag_trans.gif" />
+		<label id="handLabel" for="Points">Hand Value:</label>
+		<input type="text" readonly id="handValue" name="handValue" />
+		<label id="PointsLabel" for="Points">Points Banks:</label>
+		<input type="text" readonly id="pointsBank" name="pointsBank" />
+		<br>
+		<input type="button" id="dealCards" name="dealCards" value="Deal" class="countUpButton" />	
+		<input type="button" id="standHand" name="standHand" value="Stand" class="countUpButton" disabled="disabled" />
+		<input type="button" id="resetGame" name="resetGame" value="Reset" class="countUpButton" />
+	   <p id="gameRules">
+			<h2>Rules Below</h2>
+			 Click <strong>Deal</strong> button to deal a hand of five cards.The first two cards 
+			 will be filped over to show the value. Click one of the remaning cards to filp over it over.
+			 To stand, click the <strong>Stand</strong> button this will tell your hand value. Clicking the stand but will also show you your point for that round. To restart the game, click the 
+			<strong>Reset</strong> button. Restarting the game will set your points bank back to 1000.
+			<h3>Pay out</h3>
+			 <ul>
+				<li>Greater than 30: -50 points</li>
+				<li>30: 200 points</li>
+				<li>28 or 29: 150 points</li>
+				<li>26 or 27: 100 points</li>
+				<li>24 or 25: 50 points</li>
+				<li>22 or 23: 25 points</li>
+				<li>Under 22: -25 points</li>
+			 </ul>
+	   </p>
+	<footer>
+
+	</footer>
+</body>
+</html>

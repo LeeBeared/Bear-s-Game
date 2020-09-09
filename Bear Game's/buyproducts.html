@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+	Page: buyproducts
+	Author: LeeWayne Barrineau
+	Date: 11/12/2019
+	Filename: buyproducts.html
+	
+-->
+	<title> Buy Products</title>
+	<meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+	<script src="buyscript.js"></script>
+</head>
+<body>
+	<header class="Buyprod">
+		
+		<aside>
+			<div id="todayDate"></div>
+			<image src="lupin_bear.bmp" /></aside>
+		<h1>Bear's Games</h1>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="buyproducts.html">Buy Products</a></li>
+				<li><a href="confirmproducts.html">Confirm Products</a></li>
+				<li><a href="playgame.html">Play Game</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<p> Buy a piece of peace and tranquility that Bear's games has provided over the year.Below is the best way to enjoy that peace and tranquility that the companys prides it self on
+	
+	</p>
+	
+	<aside id="formAside">
+		<form id="purchaseForm" name="purchaseForm" method="post" action="confirmproducts.html">
+			<h1>Please fill out this form the purchase a product of Bears game</h1>
+			<p>* Required<p>
+			<fieldset id="orderInfo"> 
+				<table>
+					<tr>
+						<td><label for="firstBox">First Name*</label></td>
+						<td><input name="firstBox" id="firstBox" type="text" required /></td>
+					</tr>
+					<tr>
+						<td><label for="lastBox">Last Name*</label></td>
+						<td><input name="lastBox" id="lastBox" type="text" required /></td>
+					</tr>
+					<tr>
+						<td><label for="emailBox">E-mail*</label></td>
+						<td><input name="emailBox" id="emailBox" type="email" required /></td>
+					</tr>
+					<tr>
+						<td><label for="productsBox">Please choose a product*</label></td>
+						<td><select id="productsBox" name="productsBox"  size="5">
+							<option value="54.55">A Game of Thorns($54.55)</option>
+							<option value="22.95">Widgets($22.95)</option> 
+							<option value="99.89">Tic-Tac-Toe($99.89)</option>           
+							<option value="1.25">Toe-Tac-Tic($1.25)</option>
+							<option value="13.57">Count Up($13.57)</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="quantityBox">Please enter the quantity*</label></td>
+						<td><input type="number" min="1" max="20" id="quantityBox" name="quantityBox" required/></td>
+					</tr>
+				</table>
+				
+			</fieldset>
+			<input id="buttonSubmit" type="submit" name="buttonSubmit" value="Buy Product">
+		</form>
+	</aside>
+	<aside id="shoppingAside">
+      <table>
+         <caption>Shopping Cart</caption>
+         <tr><th>Name</th><td><span id="shoppingName"></span></td></tr>
+         <tr><th>E-mail</th><td><span id="shoppingEmail"></span></td></tr>         
+         <tr><th>Product</th><td><span id="shoppingProduct"></span></td></tr>
+         <tr><th>Quantity</th><td><span id="shoppingQuantity"></span></td></tr>
+		  <tr><th>Base Product Price: </th><td><span id="shoppingBasePrice"></span></td></tr>
+		 <tr><th>Sales Tax:</th><td><span id="shoppingTax"></span></td></tr>
+         <tr><th>Total</th><td><span id="shoppingTotal"></span></td></tr> 
+      </table>                                               
+   </aside>
+	
+	<footer>
+	</footer>
+</body>
+</html>

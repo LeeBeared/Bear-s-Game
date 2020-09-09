@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+	Page: confirmproducts
+	Author: LeeWayne Barrineau
+	Date: 11/12/2019
+	Filename: confirmproducts.html
+	
+-->
+	<title>Confirm Products</title>
+	<meta charset="utf-8" />
+   <link href="styles.css" rel="stylesheet" />
+   <script src="confirmscript.js"></script>
+</head>
+
+<body>
+	<header class="Index">
+		<aside><div id="todayDate">Date</div><image src="lupin_bear.bmp" /></aside>
+		<h1>Bear's Games</h1>
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="buyproducts.html">Buy Products</a></li>
+				<li><a href="confirmproducts.html">Confirm Products</a></li>
+				<li><a href="playgame.html">Play Game</a></li>
+			</ul>
+		</nav>
+	</header>
+	<aside id="customerAside">
+      <table>
+         <caption>Shopping Cart</caption>
+         <tr><th>Name</th><td><span id="shoppingName"></span></td></tr>
+         <tr><th>E-mail</th><td><span id="shoppingEmail"></span></td></tr>         
+         <tr><th>Product</th><td><span id="shoppingProduct"></span></td></tr>
+         <tr><th>Quantity</th><td><span id="shoppingQuantity"></span></td></tr>
+		  <tr><th>Base Product Price: </th><td><span id="shoppingBasePrice"></span></td></tr>
+		 <tr><th>Sales Tax:</th><td><span id="shoppingTax"></span></td></tr>
+         <tr><th>Total</th><td><span id="shoppingTotal"></span></td></tr> 
+      </table>                                               
+   </aside>  
+   
+   <aside id="paymentAside">
+      <h1>Customer Payment Form</h1>  
+	  <p id="legendBox">* - Required Item</p>  	  
+       <form id="creditInfo" name="creditInfo" method="post">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+			<table>
+				<tr>
+					<td><label for="cardHolder">Card Holder*</label></td>
+					<td><input name="cardHolder" id="cardHolder" required type="text" /> </td>
+				</tr>
+				<tr>
+					<td><label>Credit Company*</label></td>
+					<td><select id="companyBox" name="companyBox" size="4" >
+						<option value="amex">American Express</option>
+						<option value="discover">Discover</option> 
+						<option value="master">MasterCard</option>           
+						<option value="visa">Visa</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="cardNumber">Credit Card Number*</label></td>
+					<td><input name="cardNumber" id="cardNumber" required type="text"
+						pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+				   </td>
+				</tr>
+				<tr>
+					<td><label for="expDate">Expiration Date*</label></td>
+					<td><input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" /></td>
+				</tr>
+				<tr>
+					<td><label for="cvcNumber">CVC*</label></td>
+					<td><input name="cvcNumber" id="cvcNumber" required pattern="^\d{3,4}$" type="text"/></td>
+				</tr>
+			</table>
+
+         </fieldset>   
+         <input id="buttonSubmit" type="submit" name="buttonSubmit" value="Finished">     
+      </form>
+   </aside>
+	
+	<footer>
+	
+	</footer>
+</body>
+</html>
